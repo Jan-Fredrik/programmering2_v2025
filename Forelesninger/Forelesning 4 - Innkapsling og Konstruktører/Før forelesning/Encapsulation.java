@@ -1,19 +1,25 @@
+
+
 public class Encapsulation {
     public static void main(String[] args) {
 
         System.out.println("---Student 1---");
 
-        Student student1 = new Student();
+        Student student1 = new Student("Ole-Edvard", "Ørebæk", 27, "123456");
 
-        student1.firstName = "Ole-Edvard";
-        student1.lastName = "Ørebæk";
-        student1.age = 27;
-        student1.studentId = "123456";
+/*
+        student1.setStudentId("Ole-Edvard");
+        student1.setLastName("Ørebæk");
+        student1.setAge(27);
+        student1.setAge(10);
+        student1.setStudentId("123456");
+*/
 
-        System.out.println(student1.firstName);
-        System.out.println(student1.lastName);
-        System.out.println(student1.age);
-        System.out.println(student1.studentId);
+        System.out.println(student1.getFirstName());
+        System.out.println(student1.getLastName());
+        System.out.println(student1.getAge());
+        System.out.println(student1.getStudentId());
+        System.out.println(student1.getBirthNumber());
 
 
         //---Student 2---
